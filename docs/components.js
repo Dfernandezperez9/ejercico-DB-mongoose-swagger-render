@@ -1,4 +1,4 @@
-const swaggerComponents = {
+const SWAGGER_COMPONENTS = {
     schemas: {
       Task: {
         type: 'object',
@@ -13,4 +13,4 @@ const swaggerComponents = {
     },
   };
   
-  module.exports = swaggerComponents;
+  module.exports = SWAGGER_COMPONENTS;

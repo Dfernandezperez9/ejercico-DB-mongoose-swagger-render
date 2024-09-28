@@ -3,14 +3,14 @@ const app = express();
 const PORT = 8080;
 const { dbConnection } = require('./config/config');
 const routes = require('./routes');
-const swaggerUi = require('swagger-ui-express');
-const swaggerConfig = require('./docs/index');
+const SWAGGER_UI = require('swagger-ui-express');
+const SWAGGER_CONFIG = require('./docs/index');
 
 app.use(express.json());
 
 app.use('/', routes);
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerConfig));
+app.use('/api-docs', SWAGGER_UI.serve, SWAGGER_UI.setup(SWAGGER_CONFIG));
 
 dbConnection();
 

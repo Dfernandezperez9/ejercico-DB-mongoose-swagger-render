@@ -1,4 +1,4 @@
-const swaggerBasicInfo = {
+const SWAGGER_BASIC_INFO = {
     openapi: '3.0.0',
     info: {
       title: 'API de Tareas',
@@ -7,4 +7,4 @@ const swaggerBasicInfo = {
     },
   };
   
-  module.exports = swaggerBasicInfo;
+  module.exports = SWAGGER_BASIC_INFO;

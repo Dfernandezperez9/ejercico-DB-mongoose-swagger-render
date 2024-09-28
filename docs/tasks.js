@@ -1,4 +1,4 @@
-const swaggerTasks = {
+const SWAGGER_TASKS = {
     paths: {
       '/create': {
         post: {
@@ -106,4 +106,4 @@ const swaggerTasks = {
     },
   };
   
-  module.exports = swaggerTasks;
+  module.exports = SWAGGER_TASKS;

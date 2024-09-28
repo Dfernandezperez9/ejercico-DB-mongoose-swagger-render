@@ -1,11 +1,11 @@
-const swaggerComponents = require('./components');
-const swaggerBasicInfo = require('./basicInfo');
-const swaggerTasks = require('./tasks');
+const SWAGGER_COMPONENTS = require('./components');
+const SWAGGER_BASIC_INFO = require('./basicInfo');
+const SWAGGER_TASKS = require('./tasks');
 
-const swaggerConfig = {
-  ...swaggerBasicInfo,
-  components: swaggerComponents,
-  paths: swaggerTasks.paths,
+const SWAGGER_CONFIG = {
+  ...SWAGGER_BASIC_INFO,
+  components: SWAGGER_COMPONENTS,
+  paths: SWAGGER_TASKS.paths,
 };
 
-module.exports = swaggerConfig;
+module.exports = SWAGGER_CONFIG;
