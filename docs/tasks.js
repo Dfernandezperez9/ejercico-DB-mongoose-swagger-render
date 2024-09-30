@@ -2,6 +2,7 @@ const SWAGGER_TASKS = {
     paths: {
       '/create': {
         post: {
+          tags: ["Create a task"],
           summary: 'Crear una nueva tarea',
           description: 'Crear una nueva tarea con el estado "no completada"',
           requestBody: {
@@ -29,6 +30,7 @@ const SWAGGER_TASKS = {
       },
       '/': {
         get: {
+          tags: ["Obtain a task"],
           summary: 'Obtener todas las tareas',
           description: 'Obtener todas las tareas existentes',
           responses: {
@@ -51,6 +53,7 @@ const SWAGGER_TASKS = {
       },
       '/markAsCompleted/{_id}': {
         put: {
+          tags: ["Mark as completed"],
           summary: 'Marcar una tarea como completada',
           description: 'Marcar una tarea como completada según su ID',
           parameters: [
@@ -78,6 +81,7 @@ const SWAGGER_TASKS = {
       },
       '/id/{_id}': {
         delete: {
+          tags: ["Eliminate a task"],
           summary: 'Eliminar una tarea',
           description: 'Eliminar una tarea según su ID',
           parameters: [
